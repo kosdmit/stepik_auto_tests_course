@@ -21,7 +21,7 @@ input_email = browser.find_element(By.CSS_SELECTOR, '[name="email"]')
 input_email.send_keys('Ivanov@vanya.ru')
 
 current_dir = os.path.abspath(os.path.dirname(__file__))
-file_path = os.path.join(current_dir, 'blank.txt')
+file_path = os.path.join(current_dir, 'README.md')
 
 uploader = browser.find_element(By.CSS_SELECTOR, '#file')
 uploader.send_keys(file_path)
