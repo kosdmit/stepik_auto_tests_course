@@ -9,5 +9,6 @@ import time
 def test_button(browser):
 
     browser.get('http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/')
-    browser.find_element(By.CSS_SELECTOR, 'button.btn-add-to-basket')
+    button = browser.find_element(By.CSS_SELECTOR, 'button.btn-add-to-basket')
     time.sleep(4)
+    assert button, 'the button is not founded'
